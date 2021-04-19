@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -14,8 +15,35 @@ body {
 header {
   display: flex;
   background-color: #e2e2e2;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  font-size: 1.25rem;
+  margin: .5rem
+}
+
+header img {
+  display: inline;
+  width: 2rem;
+  order: -1;
+}
+
+header h1 {
+ display: inline;
+}
+
+header p {
+  display: inline;
+  font-style: italic;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0074d9;
+  padding: 1em;
 }
